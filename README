@@ -1,0 +1,48 @@
+This is the Correctly Rounded Quadrature library (CRQ)
+version 0.0.20060215.
+
+I. OVERVIEW
+===========
+
+CRQ is a set of functions computing the numerical integral of a
+function over a closed interval. Newton-Cotes rules and Gauss-Legendre
+rules are provided. It support composition and {weights, points}
+precomputations.
+
+II. HOW TO INSTALL
+==================
+
+You need to have MPFR [1] installed. Modifiy config.mk to match your
+setup, then build with `make'. This builds the static library
+`libcrq.a'.
+
+III. HOW TO USE
+===============
+
+Use the `compose_gl' function for Gauss-Legendre quadrature,
+`compose_nc' for Newton-Cotes.
+
+IV. MISC
+========
+
+Homepage: http://komite.net/laurent/soft/crq/
+
+Copyright 2005,2006 Laurent Fousse <laurent@komite.net>
+
+The CRQ Library is free software; you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License version 2.1
+as published by the Free Software Foundation.
+
+The CRQ Library is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY
+or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public
+License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with the MPFR Library; see the file COPYING.LIB.  If not, write to
+the Free Software Foundation, Inc., 51 Franklin Place, Fifth Floor, Boston,
+MA 02110-1301, USA. */
+
+Notes:
+
+[1] http://mpfr.org/

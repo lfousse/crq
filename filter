@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+my @patterns = @ARGV;
+
+my @match;
+
+while (<STDIN>) {
+    for (my $i = 0; $i <= $#patterns; $i++) {
+	if (/\Q$patterns[$i]\E/) {
+	    my @toks = split /\s/;
+	    $match[$i] = $toks[0];
+	}
+    }
+}
+
+print join(' ', @match) . "\n";
